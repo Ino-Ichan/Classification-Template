@@ -1,0 +1,34 @@
+debug: false
+exp_name: "exp000"
+model_name: "resnest50d"
+device_id: 0
+batch_size: 32
+img_size: 512
+n_workers: 4
+n_epochs: 30
+start_epoch: 0
+transform: true
+load_checkpoint:
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+
+hold_out:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+
+target_columns:
+  - "target0"
+
+df_train_path: "/data/df_train.csv"
+img_dir: "/data/train_images"
+
+accumulation_steps: 1
+early_stopping_steps: 5
+freeze_bn: false
+mixe_precision: true
