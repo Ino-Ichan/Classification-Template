@@ -37,3 +37,8 @@ Please check how the augmented image looks like in the following url;
 
 https://albumentations-demo.herokuapp.com/
 
+## Start training
+
+```
+pyton3 exp/exp000/train.py -y exp/exp000/config.yaml
+```
